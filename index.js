@@ -1,8 +1,16 @@
 var palavras = [
    'batata', 'jabuticaba', 'macaco', 'limoeiro', 'cachorro', 'bastardo',
-   'objeto', 'jabuticaba', 'pereira', 'macieira', 'consegui', 'fazenda',
+   'objeto', 'jabuticaba', 'pereira', 'macieira', 'fazenda', 'acender',
    'coisa', 'comida', 'livro', 'batedeira', 'professor', 'gato', 'papagaio',
-   'pedro'
+   'champanhe', 'caminho', 'chiclete', 'chuveiro', 'tomada', 'ventilador',
+   'basquete', 'coelho', 'contexto', 'esquerda', 'direita', 'reportagem', 'sino',
+   'forca', 'pedreira', 'palavra', 'jogo', 'serenata', 'xicara', 'elefante',
+   'garfo', 'girafa', 'geleia', 'janela', 'limonada', 'meia', 'ovo', 'pai', 'parque',
+   'peixe', 'apistograma', 'pijama', 'rato', 'roupa', 'umbigo', 'noite', 'passarinho',
+   'foto', 'copo', 'clube', 'bolo', 'amiga', 'amarelo', 'ave', 'galinha', 'vermelho',
+   'amarelo', 'preto', 'branco', 'laranja', 'rosa', 'caneca', 'catarro', 'duplex', 'crespo',
+   'girar', 'intrigante', 'jazz', 'valsa', 'xilofone', 'bartender', 'juiz', 'alpaca',
+   'hamster', 'lhama', 'quati', 'texugo', 'anzol', 'fantoche', 'doce'
 ]
 
 var letrasTentativas = []
