@@ -6,6 +6,7 @@ var palavras = [
 ]
 
 var letrasTentativas = []
+var letrasErradas = []
 var palavraEscolhida
 var numErros = 0
 
@@ -75,7 +76,7 @@ function imprimeLetrasErradas(){
 function imprimePalavra(){
     divPalavra.innerHTML = ''
 
-    for(let i = 0; i <= palavraEscolhida.length; i++){
+    for(let i = 0; i < palavraEscolhida.length; i++){
         let aux = true
         for(let j = 0; j < letrasTentativas.length; j++){
             if(palavraEscolhida[i] == letrasTentativas[j]){
