@@ -1,13 +1,13 @@
 body{
-    background-color: #152B3C;
+    background-color: #bfcff7;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #container{
     padding: 5%;
 
-    background-color: #495168;
-    box-shadow: 10px 13px 12px #ffffff59;
+    background-color: #dce4f7;
+    box-shadow: 10px 13px 12px #00000080;
 
     position: fixed;
     top: 50%;
@@ -31,7 +31,7 @@ input{
 button{
     font-size: 30px;
     border-radius: 8px;
-    background-color: #E32D40;
+    background-color: #75616b;
 }
 
 #letrasErradas, #palavra{
