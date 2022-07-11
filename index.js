@@ -7,6 +7,7 @@ var palavras = [
 
 var letrasTentativas = []
 var letrasErradas = []
+var letrasAcertadas = []
 var palavraEscolhida
 var numErros = 0
 
@@ -55,6 +56,17 @@ function imprimeImagem(){
             location.reload()
         }
         divImg.innerHTML = `<img src="img/personagem ${numErros}.png" id="imagem">`
+    }
+    else{
+        letrasAcertadas.push(letrasTentativas[letrasTentativas.length - 1])
+        
+        for(let i = 0; i < palavraEscolhida.length; i++){
+            if(!letrasAcertadas.includes(palavraEscolhida[i])){
+                return
+            }
+        }
+        alert(`Parabens você ganhou! A palavra correta era: ${palavraEscolhida}`)
+        location.reload()
     }
 }
 
