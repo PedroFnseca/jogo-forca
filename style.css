@@ -30,3 +30,12 @@ button{
     border-radius: 8px;
     background-color: #E32D40;
 }
+
+#letrasErradas, #palavra{
+    font-size: 15px;
+}
+
+#palavra{
+    font-size: 40px;
+    margin-bottom: 50px;
+}

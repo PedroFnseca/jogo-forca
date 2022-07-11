@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +7,21 @@
     <title>Jogo Forca</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="carregar()">
     <div id="container">
 
-        <div id="letrasErradas">
-            <h1>A - F - G - G</h1>
-        </div>
+        <div id="letrasErradas"></div>
 
         <img src="img/personagem 0.png" alt="">
 
-        <div id="palavra">
-            <h1>_ _ A _ A _</h1>
-        </div>
+        <div id="palavra"></div>
 
         <div id="inputs">
             <input type="text" maxlength="1" size="1" id="letraUser">
             <button id="btn">OK</button>
         </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
