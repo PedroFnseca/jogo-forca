@@ -24,6 +24,12 @@ const divLetrasErradas = document.getElementById('letrasErradas')
 const divPalavra = document.getElementById('palavra')
 const divImg = document.getElementById('divImg')
 
+document.addEventListener('keypress', function(e){
+    if(e.which == 13){
+        enviarLetra()
+    }
+ }, false);
+
 function carregar(){
     const aux = Math.floor(Math.random() * palavras.length)
 
@@ -35,7 +41,7 @@ function carregar(){
     }
 }
 
-function actionbtn(){
+function enviarLetra(){
     let letra = inputLetra.value.toUpperCase()
     inputLetra.value = ''
 
