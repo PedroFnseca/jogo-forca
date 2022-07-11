@@ -40,14 +40,15 @@ function actionbtn(){
     letrasTentativas.push(letra)
 
     imprimePalavra()
-    imprimeLetrasErradas()
     imprimeImagem()
+    imprimeLetrasErradas()
 }
 
 function imprimeImagem(){
     // Mostra a imagem correta de acordo com as vidas do usuario
 
-    if(palavraEscolhida.includes(letrasTentativas[-1])){
+    if(!palavraEscolhida.includes(letrasTentativas[letrasTentativas.length - 1])){
+        letrasErradas.push(letrasTentativas[letrasTentativas.length - 1])
         numErros += 1
         if(numErros == 6){
             alert(`Suas vidas acabaram :( a palavra correta era ${palavraEscolhida}`)
@@ -61,12 +62,12 @@ function imprimeLetrasErradas(){
     // Imprime as letras erradas
 
     let LetrasErradasFormatadas = ''
-    for(let i = 0; i < letrasTentativas.length; i++){
+    for(let i = 0; i < letrasErradas.length; i++){
         if(i == 0){
-            LetrasErradasFormatadas = ` ${letrasTentativas[i]}`
+            LetrasErradasFormatadas = ` ${letrasErradas[i]}`
         }
         else{
-            LetrasErradasFormatadas += `-${letrasTentativas[i]}`
+            LetrasErradasFormatadas += `-${letrasErradas[i]}`
         }
     }
 
