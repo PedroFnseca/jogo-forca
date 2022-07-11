@@ -7,7 +7,7 @@ body{
     padding: 5%;
 
     background-color: rgb(132, 120, 120);
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
