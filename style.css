@@ -6,7 +6,10 @@ body{
 #container{
     padding: 5%;
 
-    background-color: rgb(132, 120, 120);
+    background-color: #495168;
+    box-shadow: 10px 13px 12px #ffffff59;
+    border: solid 0.04px #ffffff59;
+
     position: fixed;
     top: 50%;
     left: 50%;
