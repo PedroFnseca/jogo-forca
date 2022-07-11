@@ -1,0 +1,30 @@
+body{
+    background-color: #152B3C;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#container{
+    padding: 5%;
+
+    background-color: rgb(132, 120, 120);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+
+input{
+    text-transform: uppercase;
+    align-self: center;
+    text-align: center;
+    font-size: 30px;
+    width: 50px;
+}
+button{
+    font-size: 30px;
+    border-radius: 3px;
+    background-color: #E32D40;
+}
