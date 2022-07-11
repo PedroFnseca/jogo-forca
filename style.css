@@ -14,7 +14,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    border-radius: 30px;
+    border-radius: 40px;
     text-align: center;
     width: 80%;
 }

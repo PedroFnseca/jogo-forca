@@ -29,7 +29,8 @@ function carregar(){
 
 function actionbtn(){
     let letra = inputLetra.value.toUpperCase()
-    
+    inputLetra.value = ''
+
     // Tratamento para tentativas invalidas
     if(letra.length != 1){
         return alert('Digite uma letra')
@@ -52,7 +53,7 @@ function imprimeImagem(){
         letrasErradas.push(letrasTentativas[letrasTentativas.length - 1])
         numErros += 1
         if(numErros == 6){
-            alert(`Suas vidas acabaram :( a palavra correta era ${palavraEscolhida}`)
+            alert(`Suas vidas acabaram :( a palavra correta era: ${palavraEscolhida}`)
             location.reload()
         }
         divImg.innerHTML = `<img src="img/personagem ${numErros}.png" id="imagem">`
