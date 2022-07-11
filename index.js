@@ -6,19 +6,21 @@ var palavras = [
 ]
 
 var letrasTentativas = []
-var palaraEscolhida
+var palavraEscolhida
+var numErros = 0
 
 const inputLetra = document.getElementById('letraUser')
 const divLetrasErradas = document.getElementById('letrasErradas')
 const divPalavra = document.getElementById('palavra')
+const divImg = document.getElementById('divImg')
 
 function carregar(){
     const aux = Math.floor(Math.random() * palavras.length)
 
-    palaraEscolhida = palavras[aux]
+    palavraEscolhida = palavras[aux].toUpperCase()
 
     divPalavra.innerHTML = ''
-    for(let i = 0; i <= palaraEscolhida.length; i++){
+    for(let i = 0; i <= palavraEscolhida.length; i++){
         divPalavra.innerHTML += ' _'
     }
 }
@@ -35,9 +37,28 @@ function actionbtn(){
     }
 
     letrasTentativas.push(letra)
-    imprimePalavra()
 
-    // Imprime as tentativas
+    imprimePalavra()
+    imprimeLetrasErradas()
+    imprimeImagem()
+}
+
+function imprimeImagem(){
+    // Mostra a imagem correta de acordo com as vidas do usuario
+
+    if(palavraEscolhida.includes(letrasTentativas[-1])){
+        numErros += 1
+        if(numErros == 6){
+            alert(`Suas vidas acabaram :( a palavra correta era ${palavraEscolhida}`)
+            location.reload()
+        }
+        divImg.innerHTML = `<img src="img/personagem ${numErros}.png" id="imagem">`
+    }
+}
+
+function imprimeLetrasErradas(){
+    // Imprime as letras erradas
+
     let LetrasErradasFormatadas = ''
     for(let i = 0; i < letrasTentativas.length; i++){
         if(i == 0){
@@ -54,10 +75,10 @@ function actionbtn(){
 function imprimePalavra(){
     divPalavra.innerHTML = ''
 
-    for(let i = 0; i <= palaraEscolhida.length; i++){
+    for(let i = 0; i <= palavraEscolhida.length; i++){
         let aux = true
         for(let j = 0; j < letrasTentativas.length; j++){
-            if(palaraEscolhida[i] == letrasTentativas[j]){
+            if(palavraEscolhida[i] == letrasTentativas[j]){
                 aux = false
                 divPalavra.innerHTML += ` ${letrasTentativas[j]}`
             }
