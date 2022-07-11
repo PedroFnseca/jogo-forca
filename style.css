@@ -12,6 +12,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 
+    border-radius: 30px;
     text-align: center;
 }
 
@@ -22,9 +23,10 @@ input{
     text-align: center;
     font-size: 30px;
     width: 50px;
+    border-radius: 8px;
 }
 button{
     font-size: 30px;
-    border-radius: 3px;
+    border-radius: 8px;
     background-color: #E32D40;
 }
